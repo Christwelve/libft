@@ -6,7 +6,7 @@
 /*   By: cmeng <cmeng@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:50:07 by cmeng             #+#    #+#             */
-/*   Updated: 2022/11/08 10:43:32 by cmeng            ###   ########.fr       */
+/*   Updated: 2022/11/11 09:03:16 by cmeng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	if (start >= ft_strlen(s))
 		return (ft_calloc(1, 1));
-	if (len > ft_strlen(s))
-		len = ft_strlen(s) + 1;
+	if (len >= ft_strlen(s))
+		len = ft_strlen(s) - start;
 	ptr1 = ft_calloc((len + 1), sizeof(char));
 	if (ptr1 == NULL)
 		return (NULL);
