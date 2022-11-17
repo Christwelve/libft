@@ -17,7 +17,7 @@ bonus: $(MANDATORY) $(BONUS)
 	ar -crs $(NAME) $^
 
 test: $(MANDATORY) $(BONUS) main.o
-	$(CC) -o $@ $^ && ./test
+	$(CC) $^ && ./a.out
 
 clean:
 	rm -f *.o

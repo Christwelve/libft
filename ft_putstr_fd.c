@@ -6,7 +6,7 @@
 /*   By: cmeng <cmeng@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 15:31:40 by cmeng             #+#    #+#             */
-/*   Updated: 2022/11/03 10:37:19 by cmeng            ###   ########.fr       */
+/*   Updated: 2022/11/14 11:59:34 by cmeng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putstr_fd(char *s, int fd)
 // int main(void)
 // {
 // 	char str[] = "Test";
-// 	int	fd = 1;
+// 	int	fd = 2;
 // 	ft_putstr_fd(str, fd);
 // 	return (0);
 // }
